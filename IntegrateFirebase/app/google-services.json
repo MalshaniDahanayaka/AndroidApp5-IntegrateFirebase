@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183136797294",
+    "project_id": "integratefirebase-se018",
+    "storage_bucket": "integratefirebase-se018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183136797294:android:8474703cb60c70af349c7f",
+        "android_client_info": {
+          "package_name": "com.malshanidahanayaka.android.integratefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183136797294-gkv6e8m80ssqpffu449m07e2u60ccv6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2-HXtqC0gcrvBooZQb6T8Cce1Aysksn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183136797294-gkv6e8m80ssqpffu449m07e2u60ccv6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
