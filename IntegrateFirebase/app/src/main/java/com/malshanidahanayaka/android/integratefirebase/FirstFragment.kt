@@ -50,6 +50,10 @@ class FirstFragment : Fragment() {
 
         }
 
+        binding.allUsersButton.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+
 
     }
 

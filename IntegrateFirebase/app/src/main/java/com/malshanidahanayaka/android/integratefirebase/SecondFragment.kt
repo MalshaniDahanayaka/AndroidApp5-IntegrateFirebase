@@ -40,8 +40,14 @@ class SecondFragment : Fragment() {
 
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+
+
+
+
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         db.collection("users").get().addOnCompleteListener{
             if(it.isSuccessful){
 
@@ -63,26 +69,15 @@ class SecondFragment : Fragment() {
 
 
                 }
-             try {
-                 binding.recyclerViewStdList.layoutManager = LinearLayoutManager(binding.recyclerViewStdList.context)
-                 val recyclerViewstd:RecyclerView = binding.recyclerViewStdList
-                 recyclerViewstd.adapter = UserListAdapter(userList!!, findNavController())
-             }catch (e: Exception){
-                 e.printStackTrace()
-             }
+                try {
+                    binding.recyclerViewStdList.layoutManager = LinearLayoutManager(view.context)
+                    val recyclerViewstd:RecyclerView = binding.recyclerViewStdList
+                    recyclerViewstd.adapter = UserListAdapter(userList!!, findNavController())
+                }catch (e: Exception){
+                    e.printStackTrace()
+                }
             }
         }
-
-    }
-
-
-
-
-
-
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
 
     }
